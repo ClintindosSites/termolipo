@@ -461,10 +461,12 @@ h3 {
 }
 .faq-answer {
   max-height: 0;
-
   overflow: hidden;
-  max-height: 300px;
   transition: max-height 0.4s ease;
+  color: #fff;
+}
+.faq-item.active .faq-answer {
+  max-height: 300px;
 }
 .faq-item.active {
   border-color: var(--dourado);
@@ -1070,4 +1072,1574 @@ footer p a {
   padding: 10px;
   border-radius: 20px;
   color: #fff;
+}
+/* ============================================= */
+/*  AJUSTES PARA TELAS MENORES QUE 480px        */
+/*  Resolve responsividade abaixo de 435px      */
+/* ============================================= */
+
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero .container {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .hero .text {
+    padding: 20px 0;
+    gap: 1.2rem;
+  }
+
+  .hero .text h1 {
+    font-size: clamp(1.8rem, 9vw, 2.2rem);
+  }
+
+  .hero .text p {
+    font-size: 0.95rem;
+  }
+
+  .hero .text ul li {
+    max-width: 100%;
+    padding: 14px 8px;
+    font-size: 0.9rem;
+  }
+
+  .hero .container .img img {
+    max-width: 280px;
+    min-width: 200px;
+    width: 100%;
+  }
+
+  .circle {
+    width: 75vw !important;
+    height: 75vw !important;
+    max-width: 280px !important;
+    max-height: 280px !important;
+    min-width: 200px !important;
+    min-height: 200px !important;
+    top: 60px;
+    border-width: 5px;
+  }
+
+  .hero .img {
+    padding: 10px;
+  }
+
+  .cta-button {
+    font-size: 0.85rem;
+    padding: 14px 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  /* ── SOBRE / SLIDER ── */
+  .sobre .container {
+    padding-bottom: 20px;
+  }
+
+  .slider {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    aspect-ratio: 1/1;
+  }
+
+  .track img {
+    width: 100% !important;
+    max-width: 320px !important;
+    height: auto !important;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+  .sobre .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .sobre .text p {
+    font-size: 0.95rem;
+  }
+
+  /* ── INFO NUTRI ── */
+  .info-nutri .container {
+    flex-direction: column;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .beneficios-grid {
+    justify-content: center;
+  }
+
+  .info-beneficio {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 16px;
+  }
+
+  .info-beneficio h3 {
+    font-size: 1.1rem;
+  }
+
+  .info-beneficio p {
+    font-size: 0.9rem;
+  }
+
+  .videos {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .video {
+    padding: 12px;
+    width: 100%;
+  }
+
+  .video video {
+    max-height: 400px;
+  }
+
+  /* ── TABELA NUTRICIONAL ── */
+  .tabelanutricional .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .tabelanutricional .text {
+    text-align: center;
+    padding: 0;
+  }
+
+  .tabelanutricional .text h2 {
+    font-size: 1.4rem;
+  }
+
+  .tabelanutricional .text p {
+    font-size: 0.9rem;
+  }
+
+  .tabelanutricional .img {
+    padding: 0;
+    width: 100%;
+  }
+
+  .nutrition-table {
+    font-size: 0.78rem;
+    width: 100%;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 10px 8px;
+  }
+
+  /* ── PROVAS SOCIAIS ── */
+  .provasociais {
+    padding: 60px 0;
+  }
+
+  .gallery {
+    column-count: 1;
+    column-gap: 12px;
+  }
+
+  .item {
+    margin-bottom: 12px;
+  }
+
+  .provasociais .text p {
+    font-size: 0.95rem;
+  }
+
+  /* ── PRODUTOS / CARDS ── */
+  .produtos .container {
+    padding-bottom: 40px;
+  }
+
+  .produtos .container h2 {
+    font-size: 1.5rem;
+    padding-top: 20px;
+  }
+
+  .produtos .text p {
+    font-size: 0.9rem;
+  }
+
+  .products-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    padding-top: 60px;
+  }
+
+  .product-item {
+    padding-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-item:nth-child(2) {
+    margin-top: 100px;
+  }
+
+  .cards {
+    width: 100% !important;
+    max-width: 320px !important;
+    min-width: 260px !important;
+    padding: 110px 16px 20px;
+  }
+
+  .img-item {
+    top: -130px;
+    width: 200px;
+  }
+
+  .img-item img {
+    width: 100%;
+  }
+
+  .product-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .product-text p {
+    font-size: 0.88rem;
+  }
+
+  .price span {
+    font-size: 2rem;
+  }
+
+  .parcelas span {
+    font-size: 1.2rem;
+  }
+
+  .cards .cta-button {
+    font-size: 0.85rem;
+    padding: 14px 16px;
+    width: calc(100% - 32px);
+    margin: 16px 16px 12px;
+  }
+
+  /* ── FAQ ── */
+  .faq {
+    padding: 50px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.6rem;
+  }
+
+  .faq-question {
+    padding: 16px;
+    font-size: 0.88rem;
+  }
+
+  .faq-answer p {
+    padding: 0 16px 16px;
+    font-size: 0.85rem;
+  }
+
+  .faq-list {
+    gap: 14px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    padding: 30px 16px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  .judits {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .judits a {
+    font-size: 0.9rem;
+  }
+
+  .badge {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+/* ── AJUSTE FINO PARA TELAS MUITO PEQUENAS (≤ 360px) ── */
+@media (max-width: 360px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .hero .text h1 {
+    font-size: clamp(1.4rem, 8vw, 1.8rem);
+  }
+
+  .circle {
+    max-width: 220px !important;
+    max-height: 220px !important;
+    top: 40px;
+  }
+
+  .hero .container .img img {
+    max-width: 220px;
+  }
+
+  .cards {
+    max-width: 280px !important;
+    min-width: 240px !important;
+    padding: 90px 12px 16px;
+  }
+
+  .img-item {
+    top: -100px;
+    width: 160px;
+  }
+
+  .product-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .price span {
+    font-size: 1.6rem;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 8px 6px;
+    font-size: 0.7rem;
+  }
+}
+/* ============================================= */
+/*  RESPONSIVIDADE COMPLETA - TODOS OS BREAKPOINTS */
+/*  Organizado do maior para o menor             */
+/* ============================================= */
+
+/* ── TABLETS E TELAS MÉDIAS (768px - 1200px) ── */
+@media (max-width: 1200px) {
+  .gallery {
+    column-count: 3;
+  }
+
+  .container {
+    max-width: 960px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .hero .text h1 {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+  }
+
+  .hero .text p {
+    font-size: 1.1rem;
+  }
+
+  .circle {
+    width: 500px;
+    height: 500px;
+  }
+
+  .hero .container .img img {
+    max-width: 380px;
+  }
+
+  .cards {
+    width: 360px;
+  }
+
+  .img-item {
+    width: 220px;
+    top: -160px;
+  }
+
+  .products-grid {
+    gap: 2.5rem;
+  }
+
+  .sobre .text h2,
+  .info-nutri h2,
+  .tabelanutricional h2,
+  .produtos .container h2 {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  }
+
+  .nutrition-table {
+    max-width: 480px;
+  }
+
+  .info-beneficio {
+    max-width: 100%;
+  }
+}
+
+/* ── TABLETS PEQUENOS / LANDSCAPE (768px - 900px) ── */
+@media (max-width: 900px) {
+  .gallery {
+    column-count: 2;
+  }
+
+  .container {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero .text {
+    padding: 30px 10px;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .hero .text h1 {
+    font-size: clamp(2rem, 5vw, 2.8rem);
+  }
+
+  .hero .text ul {
+    align-items: center;
+  }
+
+  .hero .text ul li {
+    max-width: 320px;
+  }
+
+  .circle {
+    width: 420px;
+    height: 420px;
+    top: 80px;
+  }
+
+  .hero .container .img img {
+    max-width: 320px;
+  }
+
+  .sobre .container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .sobre .img {
+    width: 100%;
+  }
+
+  .slider {
+    width: 380px;
+    height: 380px;
+  }
+
+  .track img {
+    width: 380px;
+    height: 380px;
+  }
+
+  .info-nutri .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .beneficios-grid {
+    justify-content: center;
+  }
+
+  .info-beneficio {
+    max-width: 420px;
+  }
+
+  .tabelanutricional .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .tabelanutricional .img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nutrition-table {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .products-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    margin-top: 160px;
+  }
+
+  .product-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .produtos .container h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  .produtos .text p {
+    font-size: 1rem;
+  }
+
+  .faq .container {
+    gap: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 2.2rem;
+  }
+
+  .judits {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
+
+/* ── MOBILE MÉDIO (600px - 768px) ── */
+@media (max-width: 768px) {
+  .gallery {
+    column-count: 2;
+  }
+
+  h2 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+  }
+
+  h3 {
+    font-size: clamp(1.1rem, 4vw, 1.4rem);
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 16px 24px;
+  }
+
+  .circle {
+    width: 75vw;
+    height: 75vw;
+    max-width: 380px;
+    max-height: 380px;
+  }
+
+  .hero .text ul li {
+    padding: 16px 10px;
+    font-size: 0.95rem;
+  }
+
+  .sobre .text h2 {
+    font-size: 1.6rem;
+  }
+
+  .sobre .text p {
+    font-size: 1rem;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 360px;
+    height: 360px;
+  }
+
+  .track img {
+    width: 100%;
+    max-width: 360px;
+    height: 360px;
+  }
+
+  .info-beneficio {
+    max-width: 380px;
+    padding: 20px;
+  }
+
+  .info-beneficio h3 {
+    font-size: 1rem;
+  }
+
+  .info-beneficio p {
+    font-size: 0.9rem;
+  }
+
+  .videos {
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .video {
+    padding: 14px;
+  }
+
+  .video video {
+    max-height: 450px;
+  }
+
+  .tabelanutricional .text h2 {
+    font-size: 1.5rem;
+  }
+
+  .nutrition-table {
+    font-size: 0.85rem;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 12px 10px;
+  }
+
+  .cards {
+    width: 100%;
+    max-width: 380px;
+    min-width: 300px;
+  }
+
+  .img-item {
+    width: 200px;
+    top: -140px;
+  }
+
+  .product-text h3 {
+    font-size: 1.6rem;
+  }
+
+  .price span {
+    font-size: 2rem;
+  }
+
+  .parcelas span {
+    font-size: 1.2rem;
+  }
+
+  .cards .cta-button {
+    font-size: 0.95rem;
+  }
+
+  .produtos .container h2 {
+    font-size: 1.6rem;
+    padding-top: 30px;
+  }
+
+  .products-grid {
+    gap: 100px;
+    margin-top: 120px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+
+  .product-item:nth-child(2) {
+    margin-top: 120px;
+  }
+
+  .faq {
+    padding: 60px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  .faq-question {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem;
+    padding: 0 20px 20px;
+  }
+
+  .provasociais {
+    padding: 60px 0;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  footer p {
+    font-size: 0.95rem;
+  }
+
+  .judits a {
+    font-size: 0.95rem;
+  }
+}
+
+/* ── MOBILE PEQUENO (500px - 600px) ── */
+@media (max-width: 600px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .gallery {
+    column-count: 1;
+    column-gap: 16px;
+  }
+
+  .item {
+    margin-bottom: 16px;
+  }
+
+  .hero .text h1 {
+    font-size: clamp(1.8rem, 7vw, 2.2rem);
+  }
+
+  .hero .text p {
+    font-size: 0.95rem;
+  }
+
+  .hero .text ul li {
+    max-width: 100%;
+    padding: 14px 8px;
+    font-size: 0.9rem;
+  }
+
+  .circle {
+    max-width: 320px;
+    max-height: 320px;
+    min-width: 220px;
+    min-height: 220px;
+    top: 70px;
+  }
+
+  .hero .container .img img {
+    max-width: 280px;
+    min-width: 200px;
+  }
+
+  .slider {
+    max-width: 320px;
+    height: 320px;
+  }
+
+  .track img {
+    max-width: 320px;
+    height: 320px;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 14px 20px;
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .info-beneficio {
+    max-width: 340px;
+    padding: 18px;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 10px 8px;
+    font-size: 0.8rem;
+  }
+
+  .cards {
+    max-width: 340px;
+    min-width: 280px;
+    padding: 120px 20px 20px;
+  }
+
+  .img-item {
+    width: 220px;
+    top: -150px;
+  }
+
+  .product-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .price span {
+    font-size: 2rem;
+  }
+
+  .products-grid {
+    gap: 80px;
+    margin-top: 100px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .product-item:nth-child(2) {
+    margin-top: 80px;
+  }
+
+  .badge {
+    font-size: 0.95rem;
+    padding: 6px 14px;
+  }
+
+  .provasociais .text p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ── MOBILE MUITO PEQUENO (ate 500px) ── */
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .hero .container {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .hero .container h1 {
+    font-size: clamp(2rem, 8vw, 2.2rem);
+  }
+
+  .hero .container p {
+    font-size: 0.95rem;
+  }
+
+  .hero .container ul {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .container ul li {
+    font-size: 0.9rem;
+    max-width: 100%;
+    padding: 12px 8px;
+  }
+
+  .circle {
+    width: 80vw;
+    height: 80vw;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 220px;
+    min-height: 220px;
+    top: 60px;
+    border-width: 5px;
+  }
+
+  .hero .container .img img {
+    max-width: 260px;
+    min-width: 200px;
+    width: 100%;
+  }
+
+  .sobre .container {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+  }
+
+  h3 {
+    font-size: clamp(1.1rem, 5vw, 1.4rem);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .sobre .container h2 {
+    font-size: 1.5rem;
+  }
+
+  .sobre .container p {
+    font-size: 0.95rem;
+  }
+
+  .cta-button {
+    width: fit-content;
+    max-width: none;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 14px 18px;
+  }
+
+  .sobre .container .img .track img {
+    padding: 40px 0;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .track img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .text p {
+    font-size: 0.95rem;
+  }
+
+  .info-nutri .container {
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .beneficios-grid {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info-beneficio {
+    text-align: center;
+    max-width: 320px;
+    width: 100%;
+    padding: 24px 14px;
+  }
+
+  .videos {
+    padding: 20px;
+  }
+
+  .video {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .video video {
+    max-height: 350px;
+  }
+
+  .tabelanutricional .container .text {
+    text-align: center;
+  }
+
+  .tabelanutricional .container .img {
+    padding: 20px;
+  }
+
+  .tabelanutricional .text h2 {
+    font-size: 1.4rem;
+  }
+
+  .tabelanutricional .container {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .tabelanutricional h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .tabelanutricional .text {
+    width: 100%;
+  }
+
+  .nutrition-table {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 10px 8px;
+  }
+
+  .nutrition-table th {
+    font-size: 0.75rem;
+  }
+
+  .nutrition-table td {
+    font-size: 0.75rem;
+  }
+
+  .gallery {
+    column-count: 1;
+    margin-bottom: 15px;
+  }
+
+  .products-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .product-item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .product-item:nth-child(2) {
+    margin-top: 100px;
+  }
+
+  .cards {
+    width: 100%;
+    max-width: 320px;
+    min-width: 280px;
+    padding: 110px 16px 20px;
+  }
+
+  .img-item {
+    top: -130px;
+    width: 200px;
+  }
+
+  .img-item img {
+    width: 100%;
+  }
+
+  .product-text h3 {
+    font-size: 1.3rem;
+  }
+
+  .product-text p {
+    font-size: 0.85rem;
+  }
+
+  .price span {
+    font-size: 1.8rem;
+  }
+
+  .parcelas span {
+    font-size: 1.1rem;
+  }
+
+  .cards .cta-button {
+    font-size: 0.85rem;
+    padding: 12px 16px;
+    width: calc(100% - 32px);
+    margin: 16px 16px 12px;
+  }
+
+  .produtos .container .text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produtos .container h2 {
+    font-size: 1.4rem;
+    padding-top: 20px;
+  }
+
+  .produtos .text p {
+    font-size: 0.9rem;
+  }
+
+  .tabelanutricional .container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .faq {
+    padding: 50px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq-question {
+    padding: 16px;
+    font-size: 0.9rem;
+  }
+
+  .faq-answer p {
+    padding: 0 16px 16px;
+    font-size: 0.85rem;
+  }
+
+  footer {
+    padding: 30px 16px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  .judits {
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .judits a {
+    font-size: 0.9rem;
+  }
+
+  .badge {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
+
+/* ── TELAS MUITO PEQUENAS (ate 435px) ── */
+@media (max-width: 435px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .hero .text {
+    padding: 20px 0;
+    gap: 1rem;
+  }
+
+  .hero .text h1 {
+    font-size: clamp(1.5rem, 7vw, 1.8rem);
+  }
+
+  .hero .text p {
+    font-size: 0.88rem;
+  }
+
+  .hero .text ul li {
+    padding: 10px 6px;
+    font-size: 0.85rem;
+  }
+
+  .circle {
+    width: 75vw;
+    height: 75vw;
+    max-width: 260px;
+    max-height: 260px;
+    min-width: 180px;
+    min-height: 180px;
+    top: 50px;
+    border-width: 4px;
+  }
+
+  .hero .container .img img {
+    max-width: 240px;
+    min-width: 160px;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
+    padding: 12px 16px;
+  }
+
+  .slider {
+    max-width: 280px;
+    height: 280px;
+  }
+
+  .track img {
+    max-width: 280px;
+    height: 280px;
+  }
+
+  .info-beneficio {
+    max-width: 100%;
+    padding: 18px 12px;
+  }
+
+  .info-beneficio h3 {
+    font-size: 0.95rem;
+  }
+
+  .info-beneficio p {
+    font-size: 0.85rem;
+  }
+
+  .video video {
+    max-height: 300px;
+  }
+
+  .nutrition-table {
+    font-size: 0.72rem;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 8px 6px;
+  }
+
+  .cards {
+    max-width: 290px;
+    min-width: 250px;
+    padding: 100px 14px 16px;
+  }
+
+  .img-item {
+    top: -120px;
+    width: 180px;
+  }
+
+  .product-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .product-text p {
+    font-size: 0.82rem;
+  }
+
+  .price span {
+    font-size: 1.6rem;
+  }
+
+  .parcelas span {
+    font-size: 1rem;
+  }
+
+  .cards .cta-button {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+
+  .products-grid {
+    gap: 80px;
+    margin-top: 60px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .product-item:nth-child(2) {
+    margin-top: 80px;
+  }
+
+  .produtos .container h2 {
+    font-size: 1.3rem;
+  }
+
+  .faq {
+    padding: 40px 0;
+  }
+
+  .section-title h2 {
+    font-size: 1.3rem;
+  }
+
+  .faq-question {
+    padding: 14px;
+    font-size: 0.85rem;
+  }
+
+  .faq-question span {
+    width: 28px;
+    height: 28px;
+    font-size: 1.1rem;
+  }
+
+  .faq-answer p {
+    padding: 0 14px 14px;
+    font-size: 0.82rem;
+  }
+}
+
+/* ── TELAS EXTREMAMENTE PEQUENAS (ate 375px) ── */
+@media (max-width: 375px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .hero .text h1 {
+    font-size: clamp(1.3rem, 6vw, 1.5rem);
+  }
+
+  .hero .text p {
+    font-size: 0.82rem;
+  }
+
+  .hero .text ul li {
+    font-size: 0.8rem;
+    padding: 8px 6px;
+  }
+
+  .circle {
+    max-width: 220px;
+    max-height: 220px;
+    min-width: 160px;
+    min-height: 160px;
+    top: 45px;
+    border-width: 4px;
+  }
+
+  .hero .container .img img {
+    max-width: 200px;
+    min-width: 150px;
+  }
+
+  .cta-button {
+    font-size: 0.75rem;
+    padding: 10px 14px;
+  }
+
+  .slider {
+    max-width: 240px;
+    height: 240px;
+  }
+
+  .track img {
+    max-width: 240px;
+    height: 240px;
+  }
+
+  .sobre .text h2 {
+    font-size: 1.3rem;
+  }
+
+  .sobre .text p {
+    font-size: 0.85rem;
+  }
+
+  .info-beneficio {
+    padding: 14px 10px;
+  }
+
+  .info-beneficio h3 {
+    font-size: 0.88rem;
+  }
+
+  .info-beneficio p {
+    font-size: 0.8rem;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 6px 5px;
+    font-size: 0.65rem;
+  }
+
+  .cards {
+    max-width: 260px;
+    min-width: 220px;
+    padding: 90px 12px 14px;
+  }
+
+  .img-item {
+    top: -100px;
+    width: 160px;
+  }
+
+  .product-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .product-text p {
+    font-size: 0.78rem;
+  }
+
+  .price span {
+    font-size: 1.4rem;
+  }
+
+  .parcelas span {
+    font-size: 0.9rem;
+  }
+
+  .cards .cta-button {
+    padding: 10px 12px;
+    font-size: 0.75rem;
+  }
+
+  .produtos .container h2 {
+    font-size: 1.2rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .badge {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+}
+
+/* ── TELAS MINÚSCULAS (ate 320px) ── */
+@media (max-width: 320px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero .text h1 {
+    font-size: clamp(1.1rem, 5vw, 1.3rem);
+  }
+
+  .hero .text p {
+    font-size: 0.78rem;
+  }
+
+  .hero .text ul li {
+    font-size: 0.75rem;
+    padding: 6px 4px;
+    border-width: 1.5px;
+  }
+
+  .circle {
+    max-width: 180px;
+    max-height: 180px;
+    min-width: 140px;
+    min-height: 140px;
+    top: 35px;
+    border-width: 3px;
+  }
+
+  .hero .container .img img {
+    max-width: 160px;
+    min-width: 120px;
+  }
+
+  .cta-button {
+    font-size: 0.7rem;
+    padding: 8px 12px;
+    border-radius: 30px;
+  }
+
+  .slider {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .track img {
+    max-width: 200px;
+    height: 200px;
+  }
+
+  .sobre .text h2 {
+    font-size: 1.1rem;
+  }
+
+  .info-beneficio {
+    padding: 12px 8px;
+  }
+
+  .nutrition-table {
+    font-size: 0.6rem;
+  }
+
+  .nutrition-table th,
+  .nutrition-table td {
+    padding: 5px 4px;
+    font-size: 0.6rem;
+  }
+
+  .cards {
+    max-width: 220px;
+    min-width: 180px;
+    padding: 80px 10px 12px;
+  }
+
+  .img-item {
+    top: -90px;
+    width: 140px;
+  }
+
+  .product-text h3 {
+    font-size: 1rem;
+  }
+
+  .price span {
+    font-size: 1.2rem;
+  }
+
+  .parcelas span {
+    font-size: 0.8rem;
+  }
+
+  .cards .cta-button {
+    padding: 8px 10px;
+    font-size: 0.7rem;
+  }
+
+  .produtos .container h2 {
+    font-size: 1rem;
+  }
+
+  .produtos .text p {
+    font-size: 0.8rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.1rem;
+  }
+
+  .faq-question {
+    padding: 12px;
+    font-size: 0.78rem;
+  }
+
+  .faq-question span {
+    width: 24px;
+    height: 24px;
+    font-size: 0.9rem;
+  }
+
+  .faq-answer p {
+    padding: 0 12px 12px;
+    font-size: 0.75rem;
+  }
+
+  footer {
+    padding: 24px 10px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+
+  .judits a {
+    font-size: 0.8rem;
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
 }
