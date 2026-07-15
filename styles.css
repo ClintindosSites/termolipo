@@ -38,6 +38,8 @@ h2 {
 .container {
   max-width: 1300px;
   margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .hero {
   background-color: #0f4d2c;
@@ -348,16 +350,6 @@ h3 {
   height: 3px;
   width: 100%;
   background: linear-gradient(90deg, #e8b52a, #ffd86b, #e8b52a);
-}
-.faq {
-  padding: 100px 0;
-
-  background:
-    linear-gradient(rgba(10, 35, 20, 0.96), rgba(14, 48, 28, 0.96)),
-    url("/assets/bg-desktop.png");
-
-  background-size: cover;
-  background-position: center;
 }
 
 .faq .container {
@@ -670,6 +662,7 @@ h3 {
   .product-item:nth-child(2) {
     margin-top: 150px;
   }
+
   .img-item {
     top: -70px;
   }
@@ -903,7 +896,8 @@ h3 {
   transform: scale(1.08);
 }
 
-.produtos {
+.produtos,
+.faq {
   position: relative;
 
   background:
@@ -917,6 +911,7 @@ h3 {
 
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .produtos .text p {
   color: #cfcfcf;
