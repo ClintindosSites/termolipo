@@ -466,7 +466,8 @@ h3 {
   color: #fff;
 }
 .faq-item.active .faq-answer {
-  max-height: 300px;
+  max-height: 380px;
+  padding: 20px;
 }
 .faq-item.active {
   border-color: var(--dourado);
