@@ -220,7 +220,10 @@ h3 {
 
   object-fit: contain;
 }
-
+.img-content {
+  display: flex;
+  gap: 2rem;
+}
 .dores {
   background-color: #dff0e4;
   display: flex;
@@ -420,7 +423,7 @@ h3 {
 }
 .video {
   padding: 20px;
-  background: #2f6b3f;
+  background: linear-gradient(180deg, #1f5c33 0%, #174727 100%);
 
   border-radius: 25px;
   flex: 1;
@@ -2962,5 +2965,8 @@ footer p a {
   }
   .product-item:nth-child(2) {
     margin-top: 0;
+  }
+  .img-content {
+    flex-direction: column;
   }
 }
