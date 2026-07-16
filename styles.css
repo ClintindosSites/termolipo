@@ -2933,4 +2933,34 @@ footer p a {
 
     font-size: 0.9rem;
   }
+  .cards {
+    max-width: 320px;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .img-item {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .img-item img {
+    width: 100%;
+
+    margin: auto;
+    display: block;
+  }
+
+  .products-grid {
+    gap: 40px;
+  }
+  .payment {
+    margin-top: 50px;
+  }
+  .product-item:nth-child(2) {
+    margin-top: 0;
+  }
 }
