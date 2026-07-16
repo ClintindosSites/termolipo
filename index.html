@@ -199,6 +199,7 @@ content="https://termolipo.vercel.app/assets/og-termo-lipo.webp">
         </div>   
      -->
         <div class="img"  >
+          <h2>Resultados de quem usou o <strong>Termo Lipo</strong></h2>
           <div class="slider">
             <div class="track">
               <img src="./assets/antes-depois-1.webp" alt="" />
@@ -209,6 +210,73 @@ content="https://termolipo.vercel.app/assets/og-termo-lipo.webp">
           </div>
           <a href="#checkout" class="cta-button">Quero emagrecer também!</a>
         </div>
+      </div>
+    </section>
+    <section class="ingredientes">
+      <div class="container">
+        <h2>Ingredientes que tornam o <strong>Termo Lipo</strong> eficaz</h2>
+ <div class="ingredient-slider">
+      <div class="ingredient-track">
+           <div class="ingredient-card">
+            <div class="card-top"><img src="./assets/cromo.webp">
+            <h3>Cromo</h3>
+            </div>
+            <div class="card-bottom"><p>Mineral que ajuda no metabolismo de carboidrato no controle do desejo por doces.</p></div>
+          </div>
+
+          <div class="ingredient-card">
+            <div class="card-top"><img src="./assets/espirulina.webp">
+            <h3>Espirulina</h3>
+            </div>
+            <div class="card-bottom"><p>Rica em proteínas e antioxidantes, aumenta a saciedade e fornece nutrientes importantes para o metabolismo energético.</p></div>
+          </div>
+
+          <div class="ingredient-card">
+            <div class="card-top"><img src="./assets/spyrullina.webp">
+            <h3>Psyllium</h3>
+            </div>
+            <div class="card-bottom"><p>Fibra solúvel que forma gel no estômago, prolonga a saciedade, reduz o apetite e ajuda no controle da glicemia e do colesterol.</p></div>
+          </div>
+
+          <div class="ingredient-card">
+            <div class="card-top"><img src="./assets/frutoogossacarideos.webp">
+            <h3>Frutooligossacarídoes (FOS)</h3>
+            </div>
+            <div class="card-bottom"><p>Prebiótico que alimenta as bactérias benéficas a saúde intestinal, melhor metabolismo e menor inflamação.</p></div>
+          </div>
+
+          <div class="ingredient-card">
+            <div class="card-top"><img src="./assets/inulina.webp">
+            <h3>Inulina</h3>
+            </div>
+            <div class="card-bottom"><p>Fibra prebótica que aumenta a saciedade, melhora o trânsito intestinal e contribui para o equilíbrio da microbiota.</p></div>
+          </div>
+
+          <div class="ingredient-card">
+            <div class="card-top"><img src="./assets/laranja-moro.webp">
+            <h3>Laranja Moro</h3>
+            </div>
+            <div class="card-bottom"><p>Font de antocianinas (antioxidantes) que auxiliam na redução do acúmulo de gordura corporal e combatem o estresse oxidadtivo.</p></div>
+          </div>
+
+          <div class="ingredient-card">
+            <div class="card-top"><img src="./assets/pectina-citrica.webp">
+            <h3>Pectina Cítrica</h3>
+            </div>
+            <div class="card-bottom">
+              <p>Fibra solúvel que retarda o esvaziamento do estômago, aumenta a saciedade e reduz a absorção de açúcares, auxiliando no controle do apetite e do peso corporal.</p>
+            </div>
+          </div>
+
+          <div class="ingredient-card">
+            <div class="card-top"><img src="./assets/agar-agar.webp">
+            <h3>Ágar-ágar</h3>
+            </div>
+            <div class="card-bottom"><p>Fibra natural que promove a sensação de saciedade, auxilia no controle do apetite e contribui para a redução da ingestão calórica.</p></div>
+          </div>
+          
+      </div>
+     </div>
       </div>
     </section>
     <section class="info-nutri">
@@ -267,9 +335,12 @@ content="https://termolipo.vercel.app/assets/og-termo-lipo.webp">
               <source src="/assets/video-termo-lipo.mp4" type="video/mp4" />
             </video>
           </div>
+             <div class="cta-peso">
+        <p>Quer perder <strong>25KG em 4 meses</strong> igual a Gabi? <br> <strong>Clique</strong> no botão abaixo!</p>
+        <a href="#checkout" class="cta-button">Quero garantir o meu Termo Lipo</a></div>
         </div>
       </div>
-      <a href="#checkout" class="cta-button">Quero garantir o meu Termo Lipo</a>
+   
     </section>
     <section class="tabelanutricional">
       <div class="container">
@@ -346,7 +417,7 @@ content="https://termolipo.vercel.app/assets/og-termo-lipo.webp">
             </tr>
 
             <tr>
-              <td>Frutooligossacarídeos (FOS)</td>
+              <td>Frutooligossacaríodes (FOS)</td>
               <td>150 mg</td>
               <td>-</td>
             </tr>
@@ -741,10 +812,59 @@ content="https://termolipo.vercel.app/assets/og-termo-lipo.webp">
         </p>
       </div>
     </footer>
+    <script>const track = document.querySelector(".ingredient-track");
+const cards = document.querySelectorAll(".ingredient-card");
+
+let index = 0;
+
+function getVisibleCards() {
+  if (window.innerWidth <= 600) {
+    return 1;
+  }
+
+  if (window.innerWidth <= 900) {
+    return 2;
+  }
+
+  return 3;
+}
+
+function moverSlider() {
+  const visible = getVisibleCards();
+
+  const cardWidth = cards[0].offsetWidth;
+
+  const gap = 30;
+
+  index++;
+
+  if (index > cards.length - visible) {
+    index = 0;
+  }
+
+  track.style.transform = `translateX(-${index * (cardWidth + gap)}px)`;
+}
+
+setInterval(moverSlider, 3000);
+
+setTimeout(() => {
+  track.style.transform = "translateX(-300px)";
+}, 1000);
+
+window.addEventListener("resize", () => {
+  index = 0;
+
+  track.style.transform = "translateX(0)";
+
+  
+});
+</script>
     <script src="script.js"></script>
     <script src="scriptCarousel.js"></script>
     <script src="faq.js"></script>
+
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
     AOS.init();
     </script>
