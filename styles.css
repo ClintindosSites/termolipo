@@ -941,6 +941,29 @@ h3 {
 .product-item {
   position: relative;
 }
+.best-seller {
+  position: absolute;
+  top: 22px;
+  right: -58px;
+
+  width: 220px;
+  padding: 10px 0;
+
+  background: linear-gradient(180deg, #ffd65a, #d8a93a);
+
+  color: #2f6b3f;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  transform: rotate(35deg);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  z-index: 10;
+}
 .img-item {
   width: 100%;
 
