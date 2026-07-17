@@ -2153,7 +2153,9 @@ footer p a {
     inset: -120px;
     filter: blur(16px);
   }
-
+  .leaf {
+    display: none;
+  }
   .gold-divider {
     width: 220px;
     margin: 20px auto 0;
