@@ -1710,6 +1710,9 @@ footer p a {
   .info-section h3 {
     font-size: 1.7rem;
   }
+  .brand-area img {
+    display: none;
+  }
 }
 
 /* ── AJUSTE FINO PARA TELAS MUITO PEQUENAS (≤ 360px) ── */
@@ -2119,7 +2122,7 @@ footer p a {
     font-size: 0.95rem;
   }
   .footer-premium {
-    padding: 40px 60px;
+    padding: 40px 10px;
   }
 
   .footer-card {
