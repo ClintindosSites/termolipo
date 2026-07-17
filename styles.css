@@ -3351,3 +3351,16 @@ footer p a {
     flex-direction: column;
   }
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
