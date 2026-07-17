@@ -2171,9 +2171,11 @@ footer p a {
   .info-section {
     margin-top: 40px;
   }
-
+  .icon-circle {
+    display: none;
+  }
   .info-section h3 {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .info-section a {
