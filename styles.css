@@ -1713,6 +1713,12 @@ footer p a {
   .brand-area img {
     display: none;
   }
+  .payment-box {
+    padding: 20px;
+    gap: 25px;
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /* ── AJUSTE FINO PARA TELAS MUITO PEQUENAS (≤ 360px) ── */
@@ -2156,6 +2162,7 @@ footer p a {
   .leaf {
     display: none;
   }
+
   .gold-divider {
     width: 220px;
     margin: 20px auto 0;
@@ -2181,22 +2188,28 @@ footer p a {
   }
 
   .payment-box {
-    padding: 20px;
-    gap: 25px;
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
   }
 
   .payment-box-item {
     width: 100%;
     border: none !important;
     padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .payment-box-item:not(:last-child) {
-    border-bottom: 1px solid #caa53d !important;
+  .payment-box-item:nth-child(2) {
+    border-left: #d8a93a 2px solid;
+    border-right: #d8a93a 2px solid;
   }
 
   .payment-box-item svg {
-    height: 70px;
+    height: 30px;
   }
 
   .manufacturer {
